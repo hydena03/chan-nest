@@ -435,8 +435,7 @@ nav ul li a:hover {
 }
 
 .roadmap-row:nth-child(2) {
-    animation-duration: 35s;
-    animation-direction: reverse;
+    animation: slideRight 30s linear infinite;
     margin-top: 20px;
 }
 
@@ -446,6 +445,15 @@ nav ul li a:hover {
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
