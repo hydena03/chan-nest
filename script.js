@@ -67,17 +67,46 @@ document.addEventListener('DOMContentLoaded', function() {
                 name: document.getElementById('name').value,
                 phone: document.getElementById('phone').value,
                 email: document.getElementById('email').value,
-                message: document.getElementById('message').value
+                message: document.getElementById('message').value,
+                timestamp: new Date().toISOString()
             };
             
-            // 여기에 실제 폼 제출 로직 추가 (예: AJAX 요청)
-            console.log('문의 양식 제출:', formData);
+            // 제출 버튼 비활성화 및 로딩 표시
+            const submitButton = document.querySelector('.submit-button');
+            const originalButtonText = submitButton.textContent;
+            submitButton.disabled = true;
+            submitButton.textContent = '제출 중...';
             
-            // 성공 메시지 표시
-            alert('문의가 성공적으로 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+            // Google Apps Script 웹 앱 URL (이 URL을 실제 배포한 Google Apps Script 웹 앱 URL로 변경해야 합니다)
+            const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
             
-            // 폼 초기화
-            contactForm.reset();
+            // Fetch API를 사용하여 데이터 전송
+            fetch(scriptURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // 성공 메시지 표시
+                    alert('문의가 성공적으로 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+                    // 폼 초기화
+                    contactForm.reset();
+                } else {
+                    throw new Error('서버 응답 오류');
+                }
+            })
+            .catch(error => {
+                console.error('제출 오류:', error);
+                alert('문의 제출 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+            })
+            .finally(() => {
+                // 제출 버튼 다시 활성화
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+            });
         });
     }
 
