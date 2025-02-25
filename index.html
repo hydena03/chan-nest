@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan&Nest - New Standard Hospitality</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#">Chan&Nest</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#concept">Concept</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('main.png'); background-size: cover; background-position: center; position: relative;">
+        <!-- 어두운 오버레이 추가 -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>
+        <div class="hero-content" style="position: relative; z-index: 2; display: flex; flex-direction: column; height: 100%; justify-content: center;">
+            <div class="button-container" style="position: absolute; right: 50px; top: 70%; transform: translateY(-50%);">
+                <a href="#properties" class="cta-button" style="border: 2px solid white; background-color: rgba(0, 0, 0, 0.3);">Explore Our Properties</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why We Started</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>하이엔드 라이프스타일의 새로운 기준</h3>
+                    <p>진정한 휴식을 위한 공간을 만들자. 불필요한 서비스와 가격은 덜고, 여유와 필요한 서비스만을 채우자고요.</p>
+                    <p>기존의 호텔들은 불필요한 부대시설과 과잉 서비스로 인해 가격이 높아졌고, 반면 에어비앤비와 같은 단기 숙박 공간들은 일정한 품질과 서비스 기준을 유지하지 못했습니다.</p>
+                    <div class="hidden-content" id="about-hidden-content">
+                        <p>그래서 우리는 호텔 이상의 품질과 넓은 공간, 그리고 합리적인 가격을 동시에 실현하는 새로운 개념의 숙박 경험을 만들기로 했습니다.</p>
+                        <p>도심 속에서의 여유와 품격을 즐기고, 때로는 혼자만의 사색에 잠길 수도 있습니다. 우리는 이런 공간이 모두에게 열려 있기를 바랍니다.</p>
+                        <p>남산을 기점으로 첫발을 내딛은 chan & nest는 서울 전지역의 라이프스타일 생태계 구축을 목표로 하며, 3년 이내 용산(이태원, 한남), 강남(논현, 잠실), 중구(명동, 동대문), 성동구(옥수, 왕십리)등 주요 관광입지를 토대로 50여 객실 개발을 계획 중입니다.</p>
+                        <p>Chan & nest는 예술과 숙박시설이 만나 어떻게 하면 라이프스타일에 조화롭게 융화될 까를 항상 고민하며 개발할 계획입니다. Chan & nest 만의 엄격한 큐레이션을 기준으로 입지를 선정하고 기획과 시공 모든 과정에서 최상의 휴식과 품격 있는 라이프스타일을 구현합니다.</p>
+                    </div>
+                    <button id="about-read-more" class="read-more-btn">더 보기</button>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Chan&Nest Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Properties Section -->
+    <section id="properties" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Properties</h2>
+            </div>
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="/api/placeholder/400/300" alt="The Chanest Series">
+                    </div>
+                    <div class="property-details">
+                        <h3>The Chanest Series</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> 서울특별시 중구 장충동
+                        </div>
+                        <p>우리는 서울 남산이 주는 새로운 여유에 주목했습니다. 남산타워를 둘에 안고, 시시각각 빛나고 시고라운 서울의 중심에서 느낄 수 있는 자연의 여유로움은 오히려 도시의 속도에서는 느끼기 힘든, 새로운 종류의 여유입니다.</p>
+                        <div class="hidden-content" id="property1-hidden-content">
+                            <p>남산의 자연과 도심의 편리함을 동시에 누릴 수 있는 The Chanest Series는 Chan & Nest의 대표 브랜드로, 최고급 인테리어와 편안한 분위기를 제공합니다.</p>
+                        </div>
+                        <button id="property1-read-more" class="read-more-btn">더 보기</button>
+                        <div class="property-features">
+                            <span><i class="fas fa-expand"></i> 15~17평</span>
+                            <span><i class="fas fa-bed"></i> 최대 4인</span>
+                        </div>
+                        <a href="#" class="property-link">자세히 보기</a>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="/api/placeholder/400/300" alt="The Nine Stay Series">
+                    </div>
+                    <div class="property-details">
+                        <h3>The Nine Stay Series</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> 위치 미정
+                        </div>
+                        <p>The Nine Stay는 깨끗하고 편안한 공간으로, 색감의 매력을 마감 할 수 있는 특별한 숙소입니다. 우리는 이곳에서 생동감을 느낍니다. 어느 곳에서나 똑같이 느끼는 획일화된 공간을 만드는 것이 아닌 '그곳다움'을 구현하는 것이 우리의 목표입니다.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-expand"></i> 12~15평</span>
+                            <span><i class="fas fa-bed"></i> 최대 3인</span>
+                        </div>
+                        <a href="#" class="property-link">자세히 보기</a>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="/api/placeholder/400/300" alt="MOOD of Series">
+                    </div>
+                    <div class="property-details">
+                        <h3>MOOD of Series</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> 위치 미정
+                        </div>
+                        <p>Mood of series는 오롯이 휴식만을 위해 기획했습니다. 따뜻하고 아늑한 공간에서의 숙박은 음과 양을 재충전을 선물합니다. 해가 모두 진 밤, 부드러운 무드등과 함께 티비를 보고있자면 바쁜 일상 속에서의 위로를 받기도 합니다.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-expand"></i> 12~15평</span>
+                            <span><i class="fas fa-bed"></i> 최대 3인</span>
+                        </div>
+                        <a href="#" class="property-link">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Concept Section -->
+    <section id="concept" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Concept</h2>
+            </div>
+            <div class="concept-boxes">
+                <!-- Concept 1 -->
+                <div class="concept-box">
+                    <div class="concept-number">1</div>
+                    <h3>하이엔드 라이프스타일의 기준을 새롭게 정의합니다</h3>
+                    <p>우리는 기존 호텔의 방식을 따르지 않습니다. 대신, 우리가 제안하는 공간은 단순한 숙박이 아닌 라이프스타일의 새로운 기준이 됩니다. 기존의 하이엔드 호텔을 세련된 공간과 다면 서비스를 바탕으로 고객을 맞이합니다.</p>
+                    <div class="hidden-content" id="concept1-hidden-content">
+                        <p>하지만 그 대가로 과도한 부대시설과 불필요한 서비스로 인해 고객에게 높은 요금을 부과하고 있습니다. 우리는 이러한 불필요한 요소들을 제거하고 고객이 진정으로 원하는 서비스만을 제공합니다.</p>
+                    </div>
+                    <button id="concept1-read-more" class="read-more-btn">더 보기</button>
+                </div>
+                
+                <!-- Concept 2 -->
+                <div class="concept-box">
+                    <div class="concept-number">2</div>
+                    <h3>도심속에서의 여유와 품격</h3>
+                    <p>빠르게 흘러가는 도시의 리듬 속에서, 우리는 더 이상 단순한 '숙박'을 원하지 않습니다. 바쁜 일상과 끊임없는 자극 속에서도, 진정한 여유와 품격을 누릴 수 있는 공간이 필요합니다.</p>
+                    <div class="hidden-content" id="concept2-hidden-content">
+                        <p>CHAN & NEST OPERATE는 도심 속에서도 차분한 여유와 세련된 라이프스타일을 동시에 제공하는 공간을 제안합니다.</p>
+                    </div>
+                    <button id="concept2-read-more" class="read-more-btn">더 보기</button>
+                </div>
+                
+                <!-- Concept 3 -->
+                <div class="concept-box">
+                    <div class="concept-number">3</div>
+                    <h3>완벽한 호스피탈리티</h3>
+                    <p>진정한 호스피탈리티는 단순한 서비스 제공이 아닙니다. 그것은 공간이 사람을 이해하고, 사람이 공간에 녹아드는 경험입니다.</p>
+                    <div class="hidden-content" id="concept3-hidden-content">
+                        <p>우리는 고객 한 사람 한 사람의 니즈를 세심하게 파악하고, 그에 맞는 맞춤형 경험을 제공합니다. 이것이 바로 우리가 추구하는 완벽한 호스피탈리티입니다.</p>
+                    </div>
+                    <button id="concept3-read-more" class="read-more-btn">더 보기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Development Roadmap -->
+    <section id="roadmap" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Development Roadmap</h2>
+            </div>
+            <div class="roadmap-content">
+                <div class="roadmap-text">
+                    <p>남산을 기점으로 첫발을 내딛은 chan & nest는 서울 전지역의 라이프스타일 생태계 구축을 목표로 하며, 3년 이내 용산(이태원, 한남), 강남(논현, 잠실), 중구(명동, 동대문), 성동구(옥수, 왕십리)등 주요 관광입지를 토대로 50여 객실 개발을 계획 중입니다.</p>
+                    <p>Chan & nest는 예술과 숙박시설이 만나 어떻게 하면 라이프스타일에 조화롭게 융화될 까를 항상 고민하며 개발할 계획입니다. Chan & nest 만의 엄격한 큐레이션을 기준으로 입지를 선정하고 기획과 시공 모든 과정에서 최상의 휴식과 품격 있는 라이프스타일을 구현합니다.</p>
+                </div>
+                <div class="roadmap-images">
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 1">
+                    </div>
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 2">
+                    </div>
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 3">
+                    </div>
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 4">
+                    </div>
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 5">
+                    </div>
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 6">
+                    </div>
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 7">
+                    </div>
+                    <div class="roadmap-image">
+                        <img src="/api/placeholder/300/200" alt="Roadmap Image 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <!-- 문의 양식 추가 -->
+            <div class="contact-form-section">
+                <div class="section-header">
+                    <h2>문의하기</h2>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="이름을 입력해주세요" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="연락처를 입력해주세요" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group" style="width: 100%;">
+                                <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="요청사항을 입력해주세요" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">문의하기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>Chan&Nest</h3>
+                    </div>
+                    <p>당신의 일상에 쉼표를 찍어줄 공간. Yours always, 당신의 특별한 순간을 함께 하길 희망합니다.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Properties</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">The Chanest Series</a></li>
+                        <li><a href="#">The Nine Stay Series</a></li>
+                        <li><a href="#">MOOD of Series</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#concept">Concept</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>서울특별시 중구 장충동</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <p>dongjajeong40@gmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <p>+82 10-8770-9119</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Chan&Nest. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
